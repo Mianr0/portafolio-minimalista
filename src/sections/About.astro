@@ -1,5 +1,11 @@
 ---
 import Section from "src/components/Section.astro";
+import { basics } from "src/data/resume.json";
+const { summary } = basics;
 ---
 
-<Section tittle={"About"} />
+<Section tittle={"About"}>
+  <p>
+    {summary}
+  </p>
+</Section>
