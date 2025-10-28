@@ -1,0 +1,35 @@
+---
+import { basics } from "cv.json" assert { type: "json" };
+import Section from "src/components/Section.astro";
+const { name, label, image, email, location, profiles, phone } = basics;
+const { city, countryCode, region } = location;
+---
+
+<Section>
+  <div class="container">
+    <div class="info">
+      <h1>{name}</h1>
+      <h2>{label}</h2>
+      <span>
+        {city},{region}
+      </span>
+      <footer>
+        {
+            email && (
+                <a 
+                href={`mailto:${email}`}
+                title={`Enviar un correo electronico a ${name} al correoal ${email}`}
+                target="_blank"
+                rel="noopener noreferrer">
+                    <!--reobar icono -->
+                    📧
+                </a>
+            )
+        }
+      </footer>
+    </div>
+    <figure>
+      <img src={image} alt={name} />
+    </figure>
+  </div>
+</Section>
