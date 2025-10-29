@@ -5,8 +5,8 @@
         "image": "https://avatars.githubusercontent.com/u/118705884?v=4",
         "email": "miguelaneider@gmail.com",
         "phone": "(+57) 310-282-7904",
-        "url": "https://mianro.dev",
-        "summary": "A summary of John Doe…",
+        "url": "https://github.com/Mianr0",
+        "summary": "Ingeniero de Sistemas con experiencia en desarrollo web (Front-End y Back-End), docencia universitaria, soporte de sistemas y aseguramiento de calidad (QA). Capacidad para proponer soluciones tecnológicas a gran y pequeña escala. Experiencia en pruebas manuales y automatizadas, detección y documentación de errores, así como en la implementación de buenas prácticas de calidad para optimizar el ciclo de desarrollo de software.",
         "location": {
             "address": "",
             "postalCode": "733520",
@@ -29,14 +29,71 @@
     },
     "work": [
         {
-            "name": "Company",
-            "position": "President",
+            "name": "OIT",
+            "position": "Instructor",
             "url": "https://company.com",
-            "startDate": "2013-01-01",
-            "endDate": "2014-01-01",
-            "summary": "Description…",
+            "startDate": "Abril-2024",
+            "endDate": "Junio-2025",
+            "summary": [
+                "● Capacitación en TIC para estudiantes de grado 10 en proyecto de articulación académica.",
+                "● Formación de estudiantes en áreas TIC dentro del marco del proyecto SENATEC.",
+                "● Orientación de procesos y metodologías de aprendizaje en programas de educación media técnica."
+            ],
             "highlights": [
-                "Started the company"
+                "Diseño e implementación de módulos de formación en HTML, CSS y JavaScript.",
+                "Orientación a estudiantes en el uso de herramientas de desarrollo web modernas.",
+                "Elaboración de proyectos prácticos para reforzar la lógica de programación.",
+                "Promoción del pensamiento lógico y la resolución de problemas aplicados a la tecnología.",
+                "Integración de metodologías activas de aprendizaje basadas en proyectos (ABP).",
+                "Evaluación del desempeño estudiantil mediante proyectos web funcionales."
+            ]
+        },
+        {
+            "name": "Secretaria de Gobieerno Bogota",
+            "position": "Desarrollador Full Stack",
+            "url": "https://company.com",
+            "startDate": "Abril-2023",
+            "endDate": "Diciembre-2025",
+            "summary": [
+                "● Mantener actualizados periódicamente el cronograma de trabajo y el plan de intervención de los sistemas de información que le sean asignados para el cumplimiento de las obligaciones del contrato.",
+                "● Analizar, diseñar, desarrollar, implantar y/o mantener las soluciones de software asignadas, que se encuentren bajo plataformas de desarrollo JavaScript, TypeScript en frameworks de desarrollo React.js, Angular.js, NodeJS o NestJs o implementadas con contenedores de software Docker.",
+                "● Realizar los desarrollos necesarios para la evolución del sistema Bogotá Participa con sus tres módulos, de acuerdo con los requerimientos del área líder funcional.",
+                "● Realizar el despliegue en el ambiente de producción de las soluciones desarrolladas, garantizando su correcta implementación en la infraestructura dispuesta por la Entidad.",
+                "● Asegurar y entregar la totalidad de la documentación y el código fuente en la herramienta de versionamiento vigente en la Secretaría, realizando una consolidación y entrega final en medio digital.",
+                "● Elaborar y actualizar los documentos técnicos de las soluciones, de acuerdo con la metodología y estándares definidos bajo el sistema integrado de gestión de la entidad.",
+                "● Apoyar la elaboración de informes, presentaciones, actas y/o documentos técnicos que se requieran adelantar en relación con iniciativas de participación ciudadana y Gobierno Abierto."
+            ],
+            "highlights": [
+                "Diseñé y desarrollé módulos Full Stack utilizando tecnologías como React.js, Angular.js, Node.js y NestJS.",
+                "Implementé entornos de desarrollo y producción con Docker, optimizando el despliegue y mantenimiento de los sistemas.",
+                "Automatizé procesos de integración y versionamiento mediante herramientas de control de código.",
+                "Contribuí a la evolución del sistema 'Bogotá Participa', fortaleciendo sus funcionalidades y experiencia de usuario.",
+                "Elaboré documentación técnica y funcional siguiendo metodologías ágiles y estándares institucionales.",
+                "Colaboré estrechamente con equipos de analistas y líderes funcionales para garantizar la correcta implementación de los requisitos.",
+                "Apoyé la generación de reportes, actas e informes técnicos para la rendición de cuentas y proyectos de Gobierno Abierto.",
+                "Aseguré la calidad y estabilidad del software a través de pruebas continuas y despliegues controlados."
+            ]
+        },
+        {
+            "name": "Solarium Energy S.A.S",
+            "position": "Desarrollador Junior",
+            "url": "https://company.com",
+            "startDate": "Enero-2021",
+            "endDate": "Diciembre-2022",
+            "summary": [
+                "● Desarrollo de aplicaciones web con Python, React y Node.js.",
+                "● QA Tester en proyectos de software.",
+                "● Levantamiento e Identificación de requerimientos funcionales de los clientes.",
+                "● Desarrollo de servicios WEB - REST, despliegue y pruebas de interoperabilidad."
+            ],
+            "highlights": [
+                "Desarrollé interfaces web dinámicas utilizando Python, React y Node.js, optimizando la experiencia de usuario.",
+                "Implementé y probé servicios API REST para garantizar la interoperabilidad entre sistemas.",
+                "Ejecuté pruebas funcionales y de calidad (QA) para asegurar el correcto funcionamiento del software.",
+                "Participé activamente en el levantamiento de requerimientos y análisis funcional con los clientes.",
+                "Apoyé el despliegue de aplicaciones en entornos de prueba y producción.",
+                "Colaboré con el equipo de desarrollo para mejorar la integración de componentes frontend y backend.",
+                "Documenté procesos técnicos y flujos de desarrollo siguiendo las buenas prácticas de la empresa."
             ]
         }
     ],
@@ -53,20 +110,108 @@
             ]
         }
     ],
-    "education": [
-        {
-            "institution": "University",
-            "url": "https://institution.com/",
-            "area": "Software Development",
-            "studyType": "Bachelor",
-            "startDate": "2011-01-01",
-            "endDate": "2013-01-01",
-            "score": "4.0",
-            "courses": [
-                "DB1101 - Basic SQL"
-            ]
-        }
-    ],
+    "education": {
+        "carrers": [
+            {
+                "institution": "UNIVERSIDAD COOPERATIVA DE COLOMBIA",
+                "url": "https://institution.com/",
+                "area": "Ingeniero de Sistemas",
+                "studyType": "Profesional",
+                "startDate": "Febrero-2012",
+                "endDate": "Junio-2017",
+                "score": "4.5"
+            },
+            {
+                "institution": "ITFIP",
+                "url": "https://institution.com/",
+                "area": "Tecnico en Sistemas y Computacion",
+                "studyType": "Tecnico Profesional",
+                "startDate": "Junio-2006",
+                "endDate": "Septiembre-2009",
+                "score": "4.5"
+            }
+        ],
+        "courses": [
+            {
+                "institution": "IBM & Coursera",
+                "url": "https://institution.com/",
+                "area": "Inteligencia Artificial Generativa",
+                "studyType": "Curso Online",
+                "startDate": "Marzo-2025",
+                "endDate": "Junio-2025",
+                "score": "Completo",
+                "courses": [
+                    "Curso de HTML y CSS",
+                    "Curso de JavaScript"
+                ]
+            },
+            {
+                "institution": "MinTic & Universidad del Norte",
+                "url": "https://institution.com/",
+                "area": "Desarrollo de Aplicaciones Web",
+                "studyType": "Curso Online",
+                "startDate": "Enero-2023",
+                "endDate": "Abril-2023",
+                "score": "Completo",
+                "courses": [
+                    "Curso de React.js",
+                    "Curso de Node.js"
+                ]
+            },
+            {
+                "institution": "MinTic & CUN",
+                "url": "https://institution.com/",
+                "area": "Análisis de Datos",
+                "studyType": "Curso Online",
+                "startDate": "Enero-2021",
+                "endDate": "Marzo-2021",
+                "score": "Completo",
+                "courses": [
+                    "Curso de HTML y CSS",
+                    "Curso de JavaScript"
+                ]
+            },
+            {
+                "institution": "ITFIP",
+                "url": "https://institution.com/",
+                "area": "Gerencia de Proyectos",
+                "studyType": "Curso Presencial",
+                "startDate": "Junio-2020",
+                "endDate": "Agosto-2020",
+                "score": "Completo",
+                "courses": [
+                    "Curso de HTML y CSS",
+                    "Curso de JavaScript"
+                ]
+            },
+            {
+                "institution": "ITFIP",
+                "url": "https://institution.com/",
+                "area": "Pedagogía y Docencia Universitaria",
+                "studyType": "Curso Presencial",
+                "startDate": "Enero-2019",
+                "endDate": "Junio-2019",
+                "score": "Completo",
+                "courses": [
+                    "Curso de HTML y CSS",
+                    "Curso de JavaScript"
+                ]
+            },
+            {
+                "institution": "MinTic",
+                "url": "https://institution.com/",
+                "area": "Programación Básica y Avanzada (Java, Python, Aplicaciones Web)",
+                "studyType": "Curso Online",
+                "startDate": "Julio-2018",
+                "endDate": "Noviembre-2018",
+                "score": "Completo",
+                "courses": [
+                    "Curso de HTML y CSS",
+                    "Curso de JavaScript"
+                ]
+            }
+        ]
+    },
     "awards": [
         {
             "title": "Award",
@@ -105,8 +250,8 @@
     ],
     "languages": [
         {
-            "language": "English",
-            "fluency": "Native speaker"
+            "language": "Español",
+            "fluency": "Native"
         }
     ],
     "interests": [
