@@ -1,5 +1,34 @@
 ---
 import Section from "src/components/Section.astro";
+import { work } from "src/data/resume.json";
 ---
 
-<Section tittle="Experience" />
+<Section tittle="Experience">
+  <ul>
+    {
+      work.map((job) => (
+        <li>
+          <h3>{job.name}</h3>
+          <h4>{job.position}</h4>
+          <p>
+            {job.startDate} - {job.endDate}
+          </p>
+          <p>
+            {job.summary.map((linea) => (
+              <span>
+                {linea}
+                <br />
+              </span>
+            ))}
+          </p>
+        </li>
+      ))
+    }
+  </ul>
+</Section>
+
+<style>
+  p {
+    margin: 0 0 1.2rem 0;
+  }
+</style>
