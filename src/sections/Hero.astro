@@ -7,6 +7,8 @@ import Github from "src/assets/icons/Github.astro";
 import Linkedin from "src/assets/icons/Linkedin.astro";
 import X from "src/assets/icons/X.astro";
 import Worldmap from "src/assets/icons/Worldmap.astro";
+import Phone from "src/assets/icons/Phone.astro";
+import Letter from "src/assets/icons/Letter.astro";
 
 const socialIcons: Record<string, any> = {
   Github,
@@ -33,7 +35,7 @@ const socialIcons: Record<string, any> = {
               target="_blank"
               rel="noopener noreferrer"
             >
-              ✉️
+              <Letter />
             </a>
           )
         }
@@ -45,19 +47,7 @@ const socialIcons: Record<string, any> = {
               target="_blank"
               rel="noopener noreferrer"
             >
-              📞
-            </a>
-          )
-        }
-        {
-          phone && (
-            <a
-              href={`mailto:${phone}`}
-              title={`Enviar un correo electronico a ${name} al correoal ${email}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              📞
+              <Phone />
             </a>
           )
         }

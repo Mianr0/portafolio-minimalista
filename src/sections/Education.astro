@@ -6,16 +6,96 @@ const { carrers, courses } = education;
 ---
 
 <Section tittle="Education">
+  <h3>CARRERA PROFESIONAL</h3>
   {
-    carrers.map(
-      ({ institution, url, area, studyType, startDate, endDate, score }) => {
-        return (<h3>{institution}</h3>
-        <h4>{area}</h4>
-        <h4>{studyType}</h4>
-        <h5>{startDate}-{endDate}</h5>
-        <h5>{url}</h5>
-        <p>{score}</p>);
-      }
-    )
+    carrers.map(({ institution, url, area, studyType, startDate, endDate }) => {
+      return (
+        <div class="contenedor">
+          <div>
+            <h4>{institution}</h4>
+            <h4 class="tituloEducativo">{area}</h4>
+            <h5 class="tituloEducativo">Carrera {studyType}</h5>
+          </div>
+          <div style="text-align: right">
+            <h5>
+              {startDate} a {endDate}
+            </h5>
+            <a href=`${url}` target="_blank" rel= "noopener noreferrer">
+              {url}
+            </a>
+          </div>
+        </div>
+      );
+    })
+  },
+  <h3>CURSOS Y DIPLOMADOS</h3>
+  {
+    courses.map(({ institution, url, area, studyType, startDate, endDate }) => {
+      return (
+        <div class="contenedor">
+          <div>
+            <h4>{institution}</h4>
+            <h4 class="tituloEducativo">{area}</h4>
+            <h5 class="tituloEducativo">{studyType}</h5>
+          </div>
+          <div style="text-align: right">
+            <h5>
+              {startDate} a {endDate}
+            </h5>
+            <a href=`${url}` target="_blank" rel= "noopener noreferrer">
+              {url}
+            </a>
+          </div>
+        </div>
+      );
+    })
   }
 </Section>
+
+<style>
+  .contenedor {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  h3,h5 {
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 10px;
+  }
+
+  h5 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .contenedor h4{
+    font-weight: 600;
+    color: #444;
+  }
+  .contenedor h5 {
+    font-weight: 555;
+    color: #333;
+    margin: 0.4rem 0 1rem 0;
+  }
+  .tituloEducativo {
+    opacity: 0.7;
+  }
+  a {
+    font-weight: 500;
+    color: #777;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: #333;
+  }
+  p {
+    font-weight: 500;
+    margin: 0 0 1rem 0;
+  }
+</style>

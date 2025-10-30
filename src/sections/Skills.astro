@@ -1,5 +1,26 @@
 ---
 import Section from "src/components/Section.astro";
+
+import { skills } from "src/data/resume.json";
 ---
 
-<Section tittle="Skills" />
+<Section tittle="Skills">
+  <ul>
+    {
+      skills.map((skill) => (
+        <li>
+          <h3>{skill.name}</h3>
+          <p>Level: {skill.level}</p>
+          <p>
+            {skill.keywords.map((keyword, index) => (
+              <span>
+                {keyword}
+                {index < skill.keywords.length - 1 ? ", " : ""}
+              </span>
+            ))}
+          </p>
+        </li>
+      ))
+    }
+  </ul>
+</Section>

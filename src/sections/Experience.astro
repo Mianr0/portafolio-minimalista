@@ -10,9 +10,9 @@ import { work } from "src/data/resume.json";
         <li>
           <h3>{job.name}</h3>
           <h4>{job.position}</h4>
-          <p>
+          <h5>
             {job.startDate} - {job.endDate}
-          </p>
+          </h5>
           <p>
             {job.summary.map((linea) => (
               <span>
@@ -28,7 +28,21 @@ import { work } from "src/data/resume.json";
 </Section>
 
 <style>
+  h3 {
+    font-weight: 700;
+    color: #222;
+  }
+  h4 {
+    font-weight: 600;
+    color: #444;
+  }
+  h5 {
+    font-weight: 555;
+    color: #333;
+    margin: 0.4rem 0 1rem 0;
+  }
   p {
+    font-weight: 500;
     margin: 0 0 1.2rem 0;
   }
 </style>

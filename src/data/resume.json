@@ -49,7 +49,7 @@
             ]
         },
         {
-            "name": "Secretaria de Gobieerno Bogota",
+            "name": "Secretaria de Gobierno Bogota",
             "position": "Desarrollador Full Stack",
             "url": "https://company.com",
             "startDate": "Abril-2023",
@@ -114,7 +114,7 @@
         "carrers": [
             {
                 "institution": "UNIVERSIDAD COOPERATIVA DE COLOMBIA",
-                "url": "https://institution.com/",
+                "url": "https://ucc.edu.co/campus-ibague-espinal",
                 "area": "Ingeniero de Sistemas",
                 "studyType": "Profesional",
                 "startDate": "Febrero-2012",
@@ -123,7 +123,7 @@
             },
             {
                 "institution": "ITFIP",
-                "url": "https://institution.com/",
+                "url": "https://itfip.edu.co/",
                 "area": "Tecnico en Sistemas y Computacion",
                 "studyType": "Tecnico Profesional",
                 "startDate": "Junio-2006",
@@ -134,7 +134,7 @@
         "courses": [
             {
                 "institution": "IBM & Coursera",
-                "url": "https://institution.com/",
+                "url": "https://www.coursera.org/",
                 "area": "Inteligencia Artificial Generativa",
                 "studyType": "Curso Online",
                 "startDate": "Marzo-2025",
@@ -147,9 +147,9 @@
             },
             {
                 "institution": "MinTic & Universidad del Norte",
-                "url": "https://institution.com/",
+                "url": "https://www.uninorte.edu.co/",
                 "area": "Desarrollo de Aplicaciones Web",
-                "studyType": "Curso Online",
+                "studyType": "Diplomado Online",
                 "startDate": "Enero-2023",
                 "endDate": "Abril-2023",
                 "score": "Completo",
@@ -160,7 +160,7 @@
             },
             {
                 "institution": "MinTic & CUN",
-                "url": "https://institution.com/",
+                "url": "https://cun.edu.co/",
                 "area": "Análisis de Datos",
                 "studyType": "Curso Online",
                 "startDate": "Enero-2021",
@@ -173,9 +173,9 @@
             },
             {
                 "institution": "ITFIP",
-                "url": "https://institution.com/",
+                "url": "https://itfip.edu.co/",
                 "area": "Gerencia de Proyectos",
-                "studyType": "Curso Presencial",
+                "studyType": "Diplomado Presencial",
                 "startDate": "Junio-2020",
                 "endDate": "Agosto-2020",
                 "score": "Completo",
@@ -186,9 +186,9 @@
             },
             {
                 "institution": "ITFIP",
-                "url": "https://institution.com/",
+                "url": "https://itfip.edu.co/",
                 "area": "Pedagogía y Docencia Universitaria",
-                "studyType": "Curso Presencial",
+                "studyType": "Diplomado Presencial",
                 "startDate": "Enero-2019",
                 "endDate": "Junio-2019",
                 "score": "Completo",
@@ -198,10 +198,10 @@
                 ]
             },
             {
-                "institution": "MinTic",
-                "url": "https://institution.com/",
+                "institution": "MinTic & Universidad del Norte",
+                "url": "https://www.uninorte.edu.co/",
                 "area": "Programación Básica y Avanzada (Java, Python, Aplicaciones Web)",
-                "studyType": "Curso Online",
+                "studyType": "Diplomado Online",
                 "startDate": "Julio-2018",
                 "endDate": "Noviembre-2018",
                 "score": "Completo",
@@ -240,11 +240,54 @@
     "skills": [
         {
             "name": "Web Development",
-            "level": "Master",
+            "level": "Mid-level",
             "keywords": [
                 "HTML",
                 "CSS",
                 "JavaScript"
+            ]
+        },
+        {
+            "name": "Programming Languages",
+            "level": "Mid-level",
+            "keywords": [
+                "Python",
+                "JavaScript",
+                "Java"
+            ]
+        },
+        {
+            "name": "Frameworks",
+            "level": "Mid-level",
+            "keywords": [
+                "React.js",
+                "Node.js"
+            ]
+        },
+        {
+            "name": "Databases",
+            "level": "Mid-level",
+            "keywords": [
+                "MySQL",
+                "PostgreSQL",
+                "MongoDB"
+            ]
+        },
+        {
+            "name": "Tools & Platforms",
+            "level": "Mid-level",
+            "keywords": [
+                "Git",
+                "Docker"
+            ]
+        },
+        {
+            "name": "Testing & QA",
+            "level": "Mid-level",
+            "keywords": [
+                "Selenium",
+                "Jest",
+                "Postman"
             ]
         }
     ],
