@@ -1,6 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
 
+import { basics } from "../data/resume.json";
+const { name, label } = basics;
+
 import Hero from "../sections/Hero.astro";
 import About from "../sections/About.astro";
 import Education from "../sections/Education.astro";
@@ -10,7 +13,7 @@ import Experience from "../sections/Experience.astro";
 import KeyboardManager from "../components/KeyboardManager.astro";
 ---
 
-<Layout>
+<Layout title=`Portafolio de ${name} - ${label}`>
   <main>
     <Hero />
     <About />

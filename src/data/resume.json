@@ -3,8 +3,8 @@
         "name": "Miguel Aneider Rodriguez Sandoval",
         "label": "Developer con mas de 3 años de experiencia",
         "image": "https://avatars.githubusercontent.com/u/118705884?v=4",
-        "email": "miguelaneider@gmail.com",
-        "phone": "(+57) 310-282-7904",
+        "email": "https://michelleandreasane@gmail.com",
+        "phone": "(+57) 3102827904",
         "url": "https://github.com/Mianr0",
         "summary": "Ingeniero de Sistemas con experiencia en desarrollo web (Front-End y Back-End), docencia universitaria, soporte de sistemas y aseguramiento de calidad (QA). Capacidad para proponer soluciones tecnológicas a gran y pequeña escala. Experiencia en pruebas manuales y automatizadas, detección y documentación de errores, así como en la implementación de buenas prácticas de calidad para optimizar el ciclo de desarrollo de software.",
         "location": {
@@ -16,14 +16,14 @@
         },
         "profiles": [
             {
-                "network": "Github",
-                "username": "Mianr0",
-                "url": "https://github.com/Mianr0"
-            },
-            {
                 "network": "Linkedin",
                 "username": "Miguel Aneider Rodriguez Sandoval",
                 "url": "https://www.linkedin.com/in/miguelaneiderrodriguezsandoval/"
+            },
+            {
+                "network": "Github",
+                "username": "Mianr0",
+                "url": "https://github.com/Mianr0"
             }
         ]
     },
@@ -239,7 +239,7 @@
     ],
     "skills": [
         {
-            "name": "Web Development",
+            "name": "HTML5",
             "level": "Mid-level",
             "keywords": [
                 "HTML",
@@ -248,7 +248,7 @@
             ]
         },
         {
-            "name": "Programming Languages",
+            "name": "CSS3",
             "level": "Mid-level",
             "keywords": [
                 "Python",
@@ -257,7 +257,7 @@
             ]
         },
         {
-            "name": "Frameworks",
+            "name": "JavaScript",
             "level": "Mid-level",
             "keywords": [
                 "React.js",
@@ -265,7 +265,7 @@
             ]
         },
         {
-            "name": "Databases",
+            "name": "Astro",
             "level": "Mid-level",
             "keywords": [
                 "MySQL",
@@ -274,7 +274,7 @@
             ]
         },
         {
-            "name": "Tools & Platforms",
+            "name": "React.js/Next.js",
             "level": "Mid-level",
             "keywords": [
                 "Git",
@@ -282,7 +282,34 @@
             ]
         },
         {
-            "name": "Testing & QA",
+            "name": "TypeScript",
+            "level": "Mid-level",
+            "keywords": [
+                "Selenium",
+                "Jest",
+                "Postman"
+            ]
+        },
+        {
+            "name": "Node.js/NestJS",
+            "level": "Mid-level",
+            "keywords": [
+                "Selenium",
+                "Jest",
+                "Postman"
+            ]
+        },
+        {
+            "name": "PostgreSQL/MySQL",
+            "level": "Mid-level",
+            "keywords": [
+                "Selenium",
+                "Jest",
+                "Postman"
+            ]
+        },
+        {
+            "name": "Git/Github",
             "level": "Mid-level",
             "keywords": [
                 "Selenium",
@@ -314,14 +341,66 @@
     ],
     "projects": [
         {
-            "name": "Project",
-            "startDate": "2019-01-01",
-            "endDate": "2021-01-01",
-            "description": "Description...",
+            "name": "mars.codes",
+            "isActive": true,
+            "description": "Historia interactiva con retos de programación para viajar a Marte",
             "highlights": [
-                "Won award at AIHacks 2016"
+                "Elige tu propia aventura",
+                "En desarrollo"
             ],
-            "url": "https://project.com/"
+            "url": "https://mars.codes"
+        },
+        {
+            "name": "AdventJS",
+            "isActive": true,
+            "description": "Retos de programación en JavaScript para cada día de diciembre hasta Navidad",
+            "highlights": [
+                "+1 millón de visitas",
+                "Multidioma",
+                "JavaScript & TypeScript"
+            ],
+            "url": "https://adventjs.dev"
+        },
+        {
+            "name": "Codember",
+            "isActive": true,
+            "description": "Juego interactivo de programación con retos y secretos",
+            "highlights": [
+                "+2000 usuarios activos",
+                "Retos para cualquier lenguaje"
+            ],
+            "url": "https://codember.dev"
+        },
+        {
+            "name": "codi.link",
+            "isActive": true,
+            "description": "Playground de código HTML, CSS y JavaScript para compartir",
+            "highlights": [
+                "100k visitas al mes",
+                "Desarrollado por la comunidad"
+            ],
+            "url": "https://codi.link",
+            "github": "https://github.com/midudev/codi.link"
+        },
+        {
+            "name": "Pruebas Técnicas",
+            "isActive": true,
+            "description": "Lista de pruebas técnicas de empresas para practicar programación",
+            "highlights": [
+                "100% gratuito",
+                "+500 soluciones de la comunidad"
+            ],
+            "url": "https://pruebastecnicas.com",
+            "github": "https://github.com/midudev/pruebas-tecnicas"
+        },
+        {
+            "name": "miduConf",
+            "description": "Conferencia de programación en streaming para la comunidad hispanohablante con charlas top",
+            "highlights": [
+                "+15k tickets repartidos",
+                "+50k espectadores en directo"
+            ],
+            "url": "https://miduconf.com"
         }
     ]
 }

@@ -1,14 +1,14 @@
 ---
 import { basics } from "../data/resume.json" assert { type: "json" };
-import Section from "src/components/Section.astro";
+import Section from "../components/Section.astro";
 const { name, label, image, email, location, profiles, phone } = basics;
 const { city, countryCode, region } = location;
-import Github from "src/assets/icons/Github.astro";
-import Linkedin from "src/assets/icons/Linkedin.astro";
-import X from "src/assets/icons/X.astro";
-import Worldmap from "src/assets/icons/Worldmap.astro";
-import Phone from "src/assets/icons/Phone.astro";
-import Letter from "src/assets/icons/Letter.astro";
+import Github from "../assets/icons/Github.astro";
+import Linkedin from "../assets/icons/Linkedin.astro";
+import X from "../assets/icons/X.astro";
+import Worldmap from "../assets/icons/Worldmap.astro";
+import Phone from "../assets/icons/Phone.astro";
+import Letter from "../assets/icons/Letter.astro";
 
 const socialIcons: Record<string, any> = {
   Github,
@@ -24,14 +24,40 @@ const socialIcons: Record<string, any> = {
       <h2>{label}</h2>
       <span>
         <Worldmap />
-        {city},{region}
+        {city}, {region}
       </span>
-      <footer>
+      <footer class="print">
+        {
+          email && (
+            <span>
+              <Letter />
+              {email}
+            </span>
+          )
+        }
+        {
+          phone && (
+            <span>
+              <Phone />
+              {phone}
+            </span>
+          )
+        }
+        {
+          profiles.map(({ network, url, username }) => {
+            const Icon = socialIcons[network];
+            return (
+              <span><Icon/>{url}</span>
+            );
+          })
+        }
+      </footer>
+      <footer class="no-print">
         {
           email && (
             <a
               href={`mailto:${email}`}
-              title={`Enviar un correo electronico a ${name} al correo ${email}`}
+              title={`Enviar un correo electrónico a ${name} al correo ${email}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -133,5 +159,9 @@ const socialIcons: Record<string, any> = {
     border-color: #aaa;
     color: #000;
     background: #eee;
+  }
+
+  .print {
+    display: none;
   }
 </style>

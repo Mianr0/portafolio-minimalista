@@ -10,6 +10,6 @@
   },
   "dependencies": {
     "astro": "5.15.1",
-    "ninja-keys": "^1.2.2"
+    "ninja-keys": "1.2.2"
   }
 }

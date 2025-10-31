@@ -80,4 +80,26 @@ const { title } = Astro.props;
     margin: 0;
     text-wrap: pretty;
   }
+
+  @media print {
+    .no-print {
+      display: none !important;
+    }
+    ninja-keys {
+      display: none;
+    }
+  }
+
+  @media print {
+    .print {
+      display: flex !important;
+      flex-wrap: wrap;
+      margin-top: 3px;
+    }
+    .print span {
+      font-size: 0.65rem;
+      color: #666;
+      margin-right: 10px;
+    }
+  }
 </style>

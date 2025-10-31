@@ -1,11 +1,11 @@
 ---
-import Section from "src/components/Section.astro";
+import Section from "../components/Section.astro";
 
 import { education } from "../data/resume.json" assert { type: "json" };
 const { carrers, courses } = education;
 ---
 
-<Section tittle="Education">
+<Section tittle="Educación">
   <h3>CARRERA PROFESIONAL</h3>
   {
     carrers.map(({ institution, url, area, studyType, startDate, endDate }) => {
@@ -27,7 +27,7 @@ const { carrers, courses } = education;
         </div>
       );
     })
-  },
+  }
   <h3>CURSOS Y DIPLOMADOS</h3>
   {
     courses.map(({ institution, url, area, studyType, startDate, endDate }) => {
