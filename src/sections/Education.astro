@@ -11,18 +11,18 @@ const { carrers, courses } = education;
     carrers.map(({ institution, url, area, studyType, startDate, endDate }) => {
       return (
         <div class="contenedor">
-          <div>
+          <div class="infoInstitucion">
             <h4>{institution}</h4>
             <h4 class="tituloEducativo">{area}</h4>
             <h5 class="tituloEducativo">Carrera {studyType}</h5>
           </div>
-          <div style="text-align: right">
+          <div class="infoFechaUrl" style="text-align: right">
             <h5>
               {startDate} a {endDate}
             </h5>
-            <a href=`${url}` target="_blank" rel= "noopener noreferrer">
+            {/*             <a href=`${url}` target="_blank" rel= "noopener noreferrer">
               {url}
-            </a>
+            </a> */}
           </div>
         </div>
       );
@@ -33,18 +33,18 @@ const { carrers, courses } = education;
     courses.map(({ institution, url, area, studyType, startDate, endDate }) => {
       return (
         <div class="contenedor">
-          <div>
+          <div class="infoInstitucion">
             <h4>{institution}</h4>
             <h4 class="tituloEducativo">{area}</h4>
             <h5 class="tituloEducativo">{studyType}</h5>
           </div>
-          <div style="text-align: right">
+          <div class="infoFechaUrl" style="text-align: right">
             <h5>
               {startDate} a {endDate}
             </h5>
-            <a href=`${url}` target="_blank" rel= "noopener noreferrer">
+            {/*             <a href=`${url}` target="_blank" rel= "noopener noreferrer">
               {url}
-            </a>
+            </a> */}
           </div>
         </div>
       );
@@ -59,7 +59,8 @@ const { carrers, courses } = education;
     margin-bottom: 1rem;
   }
 
-  h3,h5 {
+  h3,
+  h5 {
     font-weight: 700;
     color: #222;
     margin-bottom: 10px;
@@ -70,7 +71,7 @@ const { carrers, courses } = education;
     padding: 0;
   }
 
-  .contenedor h4{
+  .contenedor h4 {
     font-weight: 600;
     color: #444;
   }
@@ -97,5 +98,22 @@ const { carrers, courses } = education;
   p {
     font-weight: 500;
     margin: 0 0 1rem 0;
+  }
+
+  @media screen and (max-width: 600px) {
+    .contenedor {
+      flex-direction: column;
+      text-align: justify;
+    }
+    .contenedor h5 {
+      margin: 0 0 2px 0;
+    }
+    .infoFechaUrl {
+      margin-bottom: 10px;
+    }
+    .infoFechaUrl h5 {
+      margin: 0;
+      font-weight: 500;
+    }
   }
 </style>

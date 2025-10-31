@@ -2,7 +2,7 @@
 import { basics } from "../data/resume.json" assert { type: "json" };
 import Section from "../components/Section.astro";
 const { name, label, image, email, location, profiles, phone } = basics;
-const { city, countryCode, region } = location;
+const { city, region } = location;
 import Github from "../assets/icons/Github.astro";
 import Linkedin from "../assets/icons/Linkedin.astro";
 import X from "../assets/icons/X.astro";
@@ -163,5 +163,19 @@ const socialIcons: Record<string, any> = {
 
   .print {
     display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    .container {
+      flex-direction: column-reverse;
+      align-items: center;
+      padding: 0;
+      text-align: center
+    }
+    .info{
+      text-align: center;
+      align-items: center;
+      padding: 0;
+    }
   }
 </style>
