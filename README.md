@@ -1,50 +1,103 @@
-Schema del JSON de cv: https://jsonresume.org/schema/
+## 📝 Portafolio Minimalista
 
-Basado en el diseño de: https://github.com/BartoszJarocki/cv
+Un portafolio web minimalista y elegante construido con Astro. Diseñado para mostrar tu experiencia profesional, habilidades y proyectos de una manera limpia y eficiente.
 
-# Astro Starter Kit: Basics
+## ✨ Características
 
-```sh
-pnpm create astro@latest -- --template basics
-```
+- 🎨 Diseño minimalista y profesional
+- 📱 Totalmente responsive
+- 🖨️ Versión optimizada para impresión
+- ⚡ Rendimiento óptimo gracias a Astro
+- 📊 Basado en [JSON Resume Schema](https://jsonresume.org/schema/)
+- 🌐 Iconos SVG optimizados
+- 🔗 Enlaces directos para contacto (email, teléfono, redes sociales)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🚀 Project Structure and Tecnologías
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+Dentro de tu proyecto Astro, verás las siguientes carpetas y archivos:
 
 ```text
 /
 ├── public/
 │   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+├── src/
+│   ├── assets/
+│   │   └── icons/
+│   │       ├── Github.astro
+│   │       ├── Impresora.astro
+│   │       ├── Letter.astro
+│   │       ├── Linkedin.astro
+│   │       ├── Phone.astro
+│   │       ├── Worldmap.astro
+│   │       └── X.astro
+│   ├── components/
+│   │   ├── KeyboardManager.astro
+│   │   └── Section.astro
+│   ├── data/
+│   │   └── resume.json
+│   ├── layouts/
+│   │   └── layout.astro
+│   ├── pages/
+│   │   └── index.astro
+│   └── sections/
+│       ├── About.astro
+│       ├── Education.astro
+│       ├── Experience.astro
+│       ├── Hero.astro
+│       ├── Projects.astro
+│       └── Skills.astro
+├── .gitignore
+├── astro.config.mjs
+├── pnpm-lock.yaml
+├── README.md
+├── tsconfig.json
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+- [Astro](https://astro.build)
+- TypeScript
+- CSS Moderno (Grid, Flexbox)
 
-## 🧞 Commands
+## 📥 Instalación
 
-All commands are run from the root of the project, from a terminal:
+1. Clona el repositorio:
 
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `pnpm install`         | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+```bash
+git clone https://github.com/Mianr0/portafolio-minimalista.git
+cd portafolio-minimalista
+```
 
-## 👀 Want to learn more?
+2. Instala las dependencias:
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+```bash
+pnpm install
+```
+
+3. Inicia el servidor de desarrollo:
+
+```bash
+pnpm dev
+```
+
+## 🛠️ Comandos
+
+| Comando        | Acción                                            |
+| :------------- | :------------------------------------------------ |
+| `pnpm install` | Instala las dependencias                          |
+| `pnpm dev`     | Inicia servidor de desarrollo en `localhost:4321` |
+| `pnpm build`   | Construye el sitio para producción en `./dist/`   |
+| `pnpm preview` | Previsualiza la build localmente                  |
+
+## 📝 Personalización
+
+1. Modifica el archivo `src/data/resume.json` con tu información personal
+2. Actualiza las imágenes en `src/assets`
+3. Ajusta los estilos en los archivos `.astro` según necesites
+4. Modifica los iconos en `src/assets/icons`
+
+## 🎨 Diseño
+
+Inspirado en el diseño de [BartoszJarocki/cv](https://github.com/BartoszJarocki/cv)
+
+## 📄 Licencia
+
+MIT - Siéntete libre de usar este código para tu propio portafolio' >
