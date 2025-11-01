@@ -2,6 +2,22 @@
 
 Un portafolio web minimalista y elegante construido con Astro. Diseñado para mostrar tu experiencia profesional, habilidades y proyectos de una manera limpia y eficiente.
 
+---
+
+## ✨ Características
+
+- 🎨 Diseño minimalista y profesional
+- 📱 Totalmente responsive
+- 🖨️ Versión optimizada para impresión
+
+---
+
+# 📝 Portafolio Minimalista
+
+Un portafolio web minimalista y elegante construido con Astro. Diseñado para mostrar tu experiencia profesional, habilidades y proyectos de una manera limpia y eficiente.
+
+---
+
 ## ✨ Características
 
 - 🎨 Diseño minimalista y profesional
@@ -12,9 +28,19 @@ Un portafolio web minimalista y elegante construido con Astro. Diseñado para mo
 - 🌐 Iconos SVG optimizados
 - 🔗 Enlaces directos para contacto (email, teléfono, redes sociales)
 
-## 🚀 Project Structure and Tecnologías
+---
 
-Dentro de tu proyecto Astro, verás las siguientes carpetas y archivos:
+## 🚀 Tecnologías
+
+- [Astro](https://astro.build)
+- TypeScript
+- CSS moderno (Grid, Flexbox)
+
+---
+
+## Estructura del proyecto
+
+Ficheros y carpetas más importantes:
 
 ```text
 /
@@ -28,9 +54,12 @@ Dentro de tu proyecto Astro, verás las siguientes carpetas y archivos:
 │   │       ├── Letter.astro
 │   │       ├── Linkedin.astro
 │   │       ├── Phone.astro
+|   |       |-- Upload.js
 │   │       ├── Worldmap.astro
 │   │       └── X.astro
 │   ├── components/
+|   |   |-- JsonUploadButton.astro
+|   |   |-- JsonUploadKeyboard.astro
 │   │   ├── KeyboardManager.astro
 │   │   └── Section.astro
 │   ├── data/
@@ -38,6 +67,8 @@ Dentro de tu proyecto Astro, verás las siguientes carpetas y archivos:
 │   ├── layouts/
 │   │   └── layout.astro
 │   ├── pages/
+|   |   |--api/
+|   |   |   |- upload.ts
 │   │   └── index.astro
 │   └── sections/
 │       ├── About.astro
@@ -48,55 +79,69 @@ Dentro de tu proyecto Astro, verás las siguientes carpetas y archivos:
 │       └── Skills.astro
 ├── .gitignore
 ├── astro.config.mjs
+├── package.json
 ├── pnpm-lock.yaml
 ├── README.md
 ├── tsconfig.json
 ```
 
-- [Astro](https://astro.build)
-- TypeScript
-- CSS Moderno (Grid, Flexbox)
+En este proyecto encontrarás, por ejemplo, `src/data/resume.json` (tu CV), iconos SVG en `src/assets/icons` y las secciones principales en `src/sections`.
+
+---
 
 ## 📥 Instalación
 
-1. Clona el repositorio:
+Clona el repositorio e instala dependencias:
 
-```bash
+```powershell
 git clone https://github.com/Mianr0/portafolio-minimalista.git
 cd portafolio-minimalista
-```
-
-2. Instala las dependencias:
-
-```bash
 pnpm install
 ```
 
-3. Inicia el servidor de desarrollo:
+Inicia el servidor de desarrollo:
 
-```bash
-pnpm dev
+```powershell
+pnpm run dev
 ```
 
-## 🛠️ Comandos
+La aplicación se abrirá típicamente en http://localhost:4321
 
-| Comando        | Acción                                            |
-| :------------- | :------------------------------------------------ |
-| `pnpm install` | Instala las dependencias                          |
-| `pnpm dev`     | Inicia servidor de desarrollo en `localhost:4321` |
-| `pnpm build`   | Construye el sitio para producción en `./dist/`   |
-| `pnpm preview` | Previsualiza la build localmente                  |
+---
+
+## 🛠️ Comandos útiles
+
+| Comando        | Acción                                          |
+| :------------- | :---------------------------------------------- |
+| `pnpm install` | Instala las dependencias                        |
+| `pnpm run dev` | Inicia servidor de desarrollo (dev)             |
+| `pnpm build`   | Construye el sitio para producción en `./dist/` |
+| `pnpm preview` | Previsualiza la build localmente                |
+
+---
 
 ## 📝 Personalización
 
-1. Modifica el archivo `src/data/resume.json` con tu información personal
-2. Actualiza las imágenes en `src/assets`
-3. Ajusta los estilos en los archivos `.astro` según necesites
-4. Modifica los iconos en `src/assets/icons`
+1. Edita `src/data/resume.json` con tus datos personales (nombre, experiencia, proyectos, redes).
+2. Reemplaza imágenes en `src/assets` o modifica los iconos en `src/assets/icons`.
+3. Ajusta estilos en `src/styles` o dentro de los componentes `.astro` según necesites.
 
-## 🎨 Diseño
+Consejo: los datos en `resume.json` alimentan las secciones automáticamente; mantener la estructura del JSON evita errores de render.
+
+---
+
+## 🧪 Depuración rápida
+
+- Si una sección no aparece, revisa `src/data/resume.json` y comprueba que las claves necesarias existan para cada sección.
+- Para inspeccionar valores durante render, añade `console.log(...)` en el frontmatter de un componente `.astro` y mira la terminal donde corre `pnpm dev`.
+
+---
+
+## 🎨 Inspiración
 
 Inspirado en el diseño de [BartoszJarocki/cv](https://github.com/BartoszJarocki/cv)
+
+---
 
 ## 📄 Licencia
 
