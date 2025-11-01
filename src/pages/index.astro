@@ -12,7 +12,8 @@ import Projects from "../sections/Projects.astro";
 import Experience from "../sections/Experience.astro";
 
 import KeyboardManager from "../components/KeyboardManager.astro";
-import JsonUploader from "../components/JsonUploader.astro";
+import JsonUploadKeyboard from "../components/JsonUploadKeyboard.astro";
+import JsonUploadButton from "../components/JsonUploadButton.astro";
 ---
 
 <Layout title=`Portafolio de ${name} - ${label}`>
@@ -25,7 +26,8 @@ import JsonUploader from "../components/JsonUploader.astro";
     <Skills />
   </main>
   <KeyboardManager />
-  <JsonUploader />
+  <JsonUploadKeyboard />
+  <JsonUploadButton />
 </Layout>
 
 <style>
