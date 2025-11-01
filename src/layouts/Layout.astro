@@ -94,6 +94,25 @@ const { title } = Astro.props;
     }
   }
 
+  .upload-btn {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .upload-btn {
+      display: flex;
+      position: fixed;
+      bottom: 45px;
+      margin: 10px;
+      padding: 10px;
+      background: #ddd;
+      border-radius: 50%;
+      border-color: #ddd;
+      border-style: solid;
+      color: #777;
+    }
+  }
+
   @media print {
     .print {
       display: flex !important;
