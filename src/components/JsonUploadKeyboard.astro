@@ -1,20 +1,15 @@
 ---
-import Upload from "../assets/icons/Upload.astro";
+
 ---
 
 <html>
   <body>
-    <input type="file" id="fileInput" style="display: none;" accept=".json" />
-    <button class="no-print" id="uploadFile"><Upload /></button>
     <script>
       const inputArchivo = document.createElement("input");
       inputArchivo.type = "file";
       inputArchivo.accept = ".json";
       inputArchivo.style.display = "none";
       document.body.appendChild(inputArchivo);
-
-      const fileInput = document.getElementById("fileInput");
-      const uploadBtn = document.getElementById("uploadFile");
 
       document.addEventListener("keydown", (event) => {
         if (event.ctrlKey && event.key.toLowerCase() === "u") {
@@ -56,23 +51,4 @@ import Upload from "../assets/icons/Upload.astro";
     </script>
   </body>
 </html>
-<style>
-  #uploadFile {
-    display: none;
-    position: fixed;
-    bottom: 45px;
-    margin: 10px;
-    padding: 10px;
-    background: #ddd;
-    border-radius: 50%;
-    border-color: #ddd;
-    border-style: solid;
-    color: #777;
-  }
-
-  @media screen and (max-width: 768px) {
-    #uploadFile {
-      display: flex;
-    }
-  }
-</style>
+<style></style>

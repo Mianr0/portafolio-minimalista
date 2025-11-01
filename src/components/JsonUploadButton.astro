@@ -1,0 +1,53 @@
+---
+
+---
+
+<script>
+  import { Upload } from "../assets/icons/Upload.js";
+
+  const inputArchivo = document.createElement("input");
+  inputArchivo.id = "inputArchivo";
+  inputArchivo.type = "file";
+  inputArchivo.accept = ".json";
+  inputArchivo.style.display = "none";
+  const buton = document.createElement("button");
+  buton.id = "buton";
+  buton.className = "upload-btn";
+  buton.innerHTML = `${Upload}`;
+  document.body.appendChild(inputArchivo);
+  document.body.appendChild(buton);
+
+  buton.addEventListener("click", async () => {
+    inputArchivo.click();
+  });
+
+  inputArchivo.addEventListener("change", async (event) => {
+    const file = event.target && (event.target as HTMLInputElement).files?.[0];
+    if (!file) return;
+
+    const formData = new FormData();
+    formData.append("file", file);
+
+    try {
+      const res = await fetch("/api/upload", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await res.json();
+      if (res.ok) {
+        alert("✅ Archivo guardado correctamente en src/data/resume.json");
+      } else {
+        alert("⚠️ Error: " + data.error);
+      }
+    } catch (error) {
+      if (error instanceof Error) {
+        alert("❌ Error al subir el archivo: " + error.message);
+      } else {
+        alert("❌ Error al subir el archivo: " + String(error));
+      }
+    } finally {
+      inputArchivo.value = "";
+    }
+  });
+</script>
