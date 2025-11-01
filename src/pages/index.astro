@@ -10,7 +10,9 @@ import Education from "../sections/Education.astro";
 import Skills from "../sections/Skills.astro";
 import Projects from "../sections/Projects.astro";
 import Experience from "../sections/Experience.astro";
+
 import KeyboardManager from "../components/KeyboardManager.astro";
+import JsonUploader from "../components/JsonUploader.astro";
 ---
 
 <Layout title=`Portafolio de ${name} - ${label}`>
@@ -23,6 +25,7 @@ import KeyboardManager from "../components/KeyboardManager.astro";
     <Skills />
   </main>
   <KeyboardManager />
+  <JsonUploader />
 </Layout>
 
 <style>
