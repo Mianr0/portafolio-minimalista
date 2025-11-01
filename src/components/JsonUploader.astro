@@ -1,0 +1,78 @@
+---
+import Upload from "../assets/icons/Upload.astro";
+---
+
+<html>
+  <body>
+    <input type="file" id="fileInput" style="display: none;" accept=".json" />
+    <button class="no-print" id="uploadFile"><Upload /></button>
+    <script>
+      const inputArchivo = document.createElement("input");
+      inputArchivo.type = "file";
+      inputArchivo.accept = ".json";
+      inputArchivo.style.display = "none";
+      document.body.appendChild(inputArchivo);
+
+      const fileInput = document.getElementById("fileInput");
+      const uploadBtn = document.getElementById("uploadFile");
+
+      document.addEventListener("keydown", (event) => {
+        if (event.ctrlKey && event.key.toLowerCase() === "u") {
+          event.preventDefault();
+          inputArchivo.click();
+        }
+      });
+
+      inputArchivo.addEventListener("change", async (event) => {
+        const file =
+          event.target && (event.target as HTMLInputElement).files?.[0];
+        if (!file) return;
+
+        const formData = new FormData();
+        formData.append("file", file);
+
+        try {
+          const res = await fetch("/api/upload", {
+            method: "POST",
+            body: formData,
+          });
+
+          const data = await res.json();
+          if (res.ok) {
+            alert("✅ Archivo guardado correctamente en src/data/resume.json");
+          } else {
+            alert("⚠️ Error: " + data.error);
+          }
+        } catch (error) {
+          if (error instanceof Error) {
+            alert("❌ Error al subir el archivo: " + error.message);
+          } else {
+            alert("❌ Error al subir el archivo: " + String(error));
+          }
+        } finally {
+          inputArchivo.value = "";
+        }
+      });
+    </script>
+  </body>
+</html>
+<style>
+  #uploadFile {
+    display: none;
+    position: fixed;
+    bottom: 45px;
+    margin: 10px;
+    padding: 10px;
+    background: #ddd;
+    border-radius: 50%;
+    border-color: #ddd;
+    border-style: solid;
+    color: #777;
+  }
+
+  @media screen and (max-width: 768px) {
+    #uploadFile {
+      display: flex;
+    }
+  }
+</style>
