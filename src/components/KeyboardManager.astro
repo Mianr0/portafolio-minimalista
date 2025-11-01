@@ -60,10 +60,11 @@ const profilesInfo = profiles.map(({ network, url }) => {
 
 <footer class="no-print">
   <small
-    >Puedes usar las teclas <kbd>Ctrl</kbd> + <kbd>k</kbd> para abrir la ventana
-    de comandos</small
+    >Puedes usar las teclas <kbd>Ctrl</kbd> + <kbd>u</kbd> para cargar tu archivo
+    .JSON o las teclas <kbd>Ctrl</kbd> + <kbd>k</kbd> para abrir la ventana de comandos</small
   >
 </footer>
+
 <div class="no-print" id="imprimir">
   <a href="#" onclick="window.print()"><Impresora /></a>
 </div>
@@ -120,7 +121,7 @@ const profilesInfo = profiles.map(({ network, url }) => {
     border-radius: 7px 7px 0 0;
     margin-inline: 20%;
     padding-block: 5px;
-    backdrop-filter: blur(2px);
+    background: #eeeeeecc;
 
     view-timeline-name: --revealing;
     view-timeline-axis: block;
