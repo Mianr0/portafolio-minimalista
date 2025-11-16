@@ -42,9 +42,6 @@ const { carrers, courses } = education;
             <h5>
               {startDate} a {endDate}
             </h5>
-            {/*             <a href=`${url}` target="_blank" rel= "noopener noreferrer">
-              {url}
-            </a> */}
           </div>
         </div>
       );
@@ -57,12 +54,13 @@ const { carrers, courses } = education;
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
+    gap: 3vw;
   }
 
   h3,
   h5 {
     font-weight: 700;
-    color: #222;
+    color: #111;
     margin-bottom: 10px;
   }
 
@@ -73,27 +71,23 @@ const { carrers, courses } = education;
 
   .contenedor h4 {
     font-weight: 600;
-    color: #444;
+    color: #222;
   }
   .contenedor h5 {
     font-weight: 555;
-    color: #333;
+    color: #000;
     margin: 0.4rem 0 1rem 0;
   }
   .tituloEducativo {
-    opacity: 0.7;
+    opacity: 0.8;
   }
-  a {
-    font-weight: 500;
-    color: #777;
-    text-decoration: none;
-    font-size: 0.9rem;
-    margin: 0;
-    padding: 0;
+
+  .infoFechaUrl {
+    overflow-wrap: break-word;
+    opacity: 0.9;
   }
-  a:hover {
-    text-decoration: underline;
-    color: #333;
+  .infoInstitucion {
+    overflow-wrap: break-word;
   }
   p {
     font-weight: 500;
