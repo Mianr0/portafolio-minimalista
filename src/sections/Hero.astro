@@ -1,10 +1,11 @@
 ---
 import { basics } from "../data/resume.json" assert { type: "json" };
 import Section from "../components/Section.astro";
-const { name, label, image, email, location, profiles, phone } = basics;
+const { name, label, image, email, location, profiles, phone, whatsapp } = basics;
 const { city, region } = location;
 import Github from "../assets/icons/Github.astro";
 import Linkedin from "../assets/icons/Linkedin.astro";
+import Whatsapp from "../assets/icons/whatsapp.astro";
 import X from "../assets/icons/X.astro";
 import Worldmap from "../assets/icons/Worldmap.astro";
 import Phone from "../assets/icons/Phone.astro";
@@ -44,6 +45,14 @@ const socialIcons: Record<string, any> = {
           )
         }
         {
+          whatsapp && (
+            <span>
+              <Whatsapp />
+              {whatsapp}
+            </span>
+          )
+        }
+        {
           profiles.map(({ network, url, username }) => {
             const Icon = socialIcons[network];
             return (
@@ -74,6 +83,18 @@ const socialIcons: Record<string, any> = {
               rel="noopener noreferrer"
             >
               <Phone />
+            </a>
+          )
+        }
+        {
+          whatsapp && (
+            <a
+              href={`https://wa.me/${whatsapp}`}
+              title={`Enviar un mensaje por whatsapp a ${name} al numero ${whatsapp}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Whatsapp />
             </a>
           )
         }
