@@ -42,9 +42,13 @@
       }
     } catch (error) {
       if (error instanceof Error) {
-        alert("❌ Error al subir el archivo: " + error.message);
+        alert(
+          "❌ API deshabilitada en producción (sitio estático) " + error.message
+        );
       } else {
-        alert("❌ Error al subir el archivo: " + String(error));
+        alert(
+          "❌ API deshabilitada en producción (sitio estático)" + String(error)
+        );
       }
     } finally {
       inputArchivo.value = "";
