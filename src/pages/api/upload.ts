@@ -3,6 +3,12 @@ import fs from "fs";
 import path from "path";
 
 export const POST: APIRoute = async ({ request }) => {
+  if (import.meta.env.PROD) {
+    return new Response("API deshabilitada en producción (sitio estático).", {
+      status: 405,
+      headers: { "Content-Type": "text/plain" },
+    });
+  }
   try {
     const contentType = request.headers.get("content-type") || "";
     if (!contentType.includes("multipart/form-data")) {
