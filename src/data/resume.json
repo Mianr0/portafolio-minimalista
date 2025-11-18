@@ -354,7 +354,7 @@
     },
     {
       "name": "Sala-de-Belleza-Martha",
-      "isActive": false,
+      "isActive": true,
       "description": "Landing page para una sala de belleza con un diseño moderno y atractivo.",
       "highlights": [
         "Diseño moderno y atractivo",
