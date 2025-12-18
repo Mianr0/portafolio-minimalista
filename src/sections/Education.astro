@@ -13,13 +13,13 @@ const { carrers, courses } = education;
         <div class="contenedor">
           <div class="infoInstitucion">
             <h4>{institution}</h4>
-            <h4 class="tituloEducativo">{area}</h4>
-            <h5 class="tituloEducativo">Carrera {studyType}</h5>
+            <h5 class="tituloEducativo">{area}</h5>
+            <h6 class="tituloEducativo">Carrera {studyType}</h6>
           </div>
           <div class="infoFechaUrl" style="text-align: right">
-            <h5>
+            <h6>
               {startDate} a {endDate}
-            </h5>
+            </h6>
             {/*             <a href=`${url}` target="_blank" rel= "noopener noreferrer">
               {url}
             </a> */}
@@ -35,13 +35,13 @@ const { carrers, courses } = education;
         <div class="contenedor">
           <div class="infoInstitucion">
             <h4>{institution}</h4>
-            <h4 class="tituloEducativo">{area}</h4>
-            <h5 class="tituloEducativo">{studyType}</h5>
+            <h5 class="tituloEducativo">{area}</h5>
+            <h6 class="tituloEducativo">{studyType}</h6>
           </div>
           <div class="infoFechaUrl" style="text-align: right">
-            <h5>
+            <h6>
               {startDate} a {endDate}
-            </h5>
+            </h6>
           </div>
         </div>
       );
@@ -59,23 +59,22 @@ const { carrers, courses } = education;
 
   h3,
   h5 {
-    color: #111;
     margin-bottom: 10px;
   }
 
   h5 {
-    margin: 0;
     padding: 0;
   }
 
   .contenedor h4 {
-    font-weight: 600;
+    font-weight: 555;
     color: #222;
   }
   .contenedor h5 {
-    font-weight: 555;
-    color: #000;
-    margin: 0.4rem 0 1rem 0;
+    font-weight: 550;
+    color: #444;
+    margin: 0.4rem 0 0.5rem 0;
+    font-family: Menlo, Monaco, "Lucida Console", "Courier New", monospace;
   }
   .tituloEducativo {
     opacity: 0.8;
@@ -84,9 +83,11 @@ const { carrers, courses } = education;
   .infoFechaUrl {
     overflow-wrap: break-word;
     opacity: 0.9;
+    max-width: 45%;
   }
   .infoInstitucion {
     overflow-wrap: break-word;
+    max-width: 50%;
   }
   p {
     font-weight: 500;
@@ -94,13 +95,12 @@ const { carrers, courses } = education;
   }
   h3 {
     font-weight: 700;
+    color: #111;
   }
-  h4 {
-    font-weight: 600;
-    color: #444;
-  }
-  h5 {
+  h6 {
     font-weight: 555;
+    margin: 0;
+    color: #000;
   }
 
   @media screen and (max-width: 600px) {
@@ -111,8 +111,13 @@ const { carrers, courses } = education;
     .contenedor h5 {
       margin: 0 0 2px 0;
     }
+    .infoInstitucion {
+      max-width: 100%;
+    }
     .infoFechaUrl {
-      margin-bottom: 10px;
+      margin-top: 0;
+      margin-bottom: 25px;
+      max-width: 100%;
     }
     .infoFechaUrl h5 {
       margin: 0;
