@@ -299,12 +299,38 @@
         ]
       },
       {
+        "institution": "SENA",
+        "url": "https://itfip.edu.co/",
+        "area": "Comunicacion en Ingles A1.1/Principiante",
+        "studyType": "Diplomado Presencial",
+        "startDate": "Octubre-2017",
+        "endDate": "Diciembre-2017",
+        "score": "Completo",
+        "courses": [
+          "Curso de HTML y CSS",
+          "Curso de JavaScript"
+        ]
+      },
+      {
         "institution": "ITFIP",
         "url": "https://itfip.edu.co/",
         "area": "Pedagogía y Docencia Universitaria",
         "studyType": "Diplomado Presencial",
-        "startDate": "Enero-2019",
-        "endDate": "Junio-2019",
+        "startDate": "Julio-2013",
+        "endDate": "Septiembre-2013",
+        "score": "Completo",
+        "courses": [
+          "Curso de HTML y CSS",
+          "Curso de JavaScript"
+        ]
+      },
+      {
+        "institution": "ITFIP",
+        "url": "https://itfip.edu.co/",
+        "area": "Programacion de Moviles y Diseño red 3D",
+        "studyType": "Diplomado Presencial",
+        "startDate": "Juniio-2009",
+        "endDate": "Septiembre-2009",
         "score": "Completo",
         "courses": [
           "Curso de HTML y CSS",
