@@ -234,6 +234,19 @@
         ]
       },
       {
+        "institution": "Oxford Centre",
+        "url": "https://cun.edu.co/",
+        "area": "Pre-Intermediate Conocimientos Academicos en el Idioma Ingles Nivel B1",
+        "studyType": "Curso Presencial",
+        "startDate": "Marzo-2022",
+        "endDate": "Febrero-2024",
+        "score": "Completo",
+        "courses": [
+          "Curso de HTML y CSS",
+          "Curso de JavaScript"
+        ]
+      },
+      {
         "institution": "MinTic & UniNorte",
         "url": "https://tananeo.uninorte.edu.co/certificados/",
         "area": "Desarrollo de Aplicaciones Web",
