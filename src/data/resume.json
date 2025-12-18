@@ -153,6 +153,15 @@
   "education": {
     "carrers": [
       {
+        "institution": "MinTic & UniNorte",
+        "url": "https://tananeo.uninorte.edu.co/certificados/",
+        "area": "Conocimientos Academicos en Habilidades en Programacion con Enfasis en Aplicaciones Web",
+        "studyType": "Especializacion",
+        "startDate": "Mayo-2022",
+        "endDate": "Diciembre-2022",
+        "score": "4.5"
+      },
+      {
         "institution": "UNIVERSIDAD COOPERATIVA DE COLOMBIA",
         "url": "https://ucc.edu.co/campus-ibague-espinal",
         "area": "Ingeniero de Sistemas",
@@ -175,10 +184,10 @@
       {
         "institution": "IBM & Coursera",
         "url": "https://www.coursera.org/",
-        "area": "Inteligencia Artificial Generativa",
+        "area": "Developing Interpersonal Skills",
         "studyType": "Curso Online",
-        "startDate": "Marzo-2025",
-        "endDate": "Junio-2025",
+        "startDate": "Febrero-2025",
+        "endDate": "Marzo-2025",
         "score": "Completo",
         "courses": [
           "Curso de HTML y CSS",
@@ -186,16 +195,16 @@
         ]
       },
       {
-        "institution": "MinTic & Universidad del Norte",
-        "url": "https://www.uninorte.edu.co/",
-        "area": "Desarrollo de Aplicaciones Web",
-        "studyType": "Diplomado Online",
-        "startDate": "Enero-2023",
-        "endDate": "Abril-2023",
+        "institution": "IBM & Coursera",
+        "url": "https://www.coursera.org/",
+        "area": "Generative AI: Prompt Engineering Basics",
+        "studyType": "Curso Online",
+        "startDate": "Febrero-2025",
+        "endDate": "Marzo-2025",
         "score": "Completo",
         "courses": [
-          "Curso de React.js",
-          "Curso de Node.js"
+          "Curso de HTML y CSS",
+          "Curso de JavaScript"
         ]
       },
       {
@@ -203,8 +212,73 @@
         "url": "https://cun.edu.co/",
         "area": "Análisis de Datos",
         "studyType": "Curso Online",
-        "startDate": "Enero-2021",
-        "endDate": "Marzo-2021",
+        "startDate": "Enero-2025",
+        "endDate": "Enero-2025",
+        "score": "Completo",
+        "courses": [
+          "Curso de HTML y CSS",
+          "Curso de JavaScript"
+        ]
+      },
+      {
+        "institution": "OIT & Cinterfor",
+        "url": "https://cun.edu.co/",
+        "area": "Formacion por Competencias y Habilidades Digitales para Formadores en la Transicion Digital",
+        "studyType": "Curso Online",
+        "startDate": "Agosto-2024",
+        "endDate": "Diciembre-2024",
+        "score": "Completo",
+        "courses": [
+          "Curso de HTML y CSS",
+          "Curso de JavaScript"
+        ]
+      },
+      {
+        "institution": "MinTic & UniNorte",
+        "url": "https://tananeo.uninorte.edu.co/certificados/",
+        "area": "Desarrollo de Aplicaciones Web",
+        "studyType": "Curso Online",
+        "startDate": "Noviembre-2022",
+        "endDate": "Diciembre-2022",
+        "score": "Completo",
+        "courses": [
+          "Curso de HTML y CSS",
+          "Curso de JavaScript"
+        ]
+      },
+      {
+        "institution": "MinTic & UniNorte",
+        "url": "https://tananeo.uninorte.edu.co/certificados/",
+        "area": "Desarrollo de Software",
+        "studyType": "Curso Online",
+        "startDate": "Septiembre-2022",
+        "endDate": "Octubre-2022",
+        "score": "Completo",
+        "courses": [
+          "Curso de HTML y CSS",
+          "Curso de JavaScript"
+        ]
+      },
+      {
+        "institution": "MinTic & UniNorte",
+        "url": "https://tananeo.uninorte.edu.co/certificados/",
+        "area": "Programacion Basica",
+        "studyType": "Curso Online",
+        "startDate": "Julio-2022",
+        "endDate": "Agosto-2022",
+        "score": "Completo",
+        "courses": [
+          "Curso de HTML y CSS",
+          "Curso de JavaScript"
+        ]
+      },
+      {
+        "institution": "MinTic & UniNorte",
+        "url": "https://tananeo.uninorte.edu.co/certificados/",
+        "area": "Fundamentos de Programacion",
+        "studyType": "Curso Online",
+        "startDate": "Mayo-2022",
+        "endDate": "Junio-2022",
         "score": "Completo",
         "courses": [
           "Curso de HTML y CSS",
@@ -231,19 +305,6 @@
         "studyType": "Diplomado Presencial",
         "startDate": "Enero-2019",
         "endDate": "Junio-2019",
-        "score": "Completo",
-        "courses": [
-          "Curso de HTML y CSS",
-          "Curso de JavaScript"
-        ]
-      },
-      {
-        "institution": "MinTic & Universidad del Norte",
-        "url": "https://www.uninorte.edu.co/",
-        "area": "Programación Básica y Avanzada (Java, Python, Aplicaciones Web)",
-        "studyType": "Diplomado Online",
-        "startDate": "Julio-2018",
-        "endDate": "Noviembre-2018",
         "score": "Completo",
         "courses": [
           "Curso de HTML y CSS",
