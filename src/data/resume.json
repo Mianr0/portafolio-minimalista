@@ -96,6 +96,45 @@
         "Colaboré con el equipo de desarrollo para mejorar la integración de componentes frontend y backend.",
         "Documenté procesos técnicos y flujos de desarrollo siguiendo las buenas prácticas de la empresa."
       ]
+    },
+    {
+      "name": "ITFIP",
+      "position": "Docente Universitario",
+      "url": "https://company.com",
+      "startDate": "Febrero-2022",
+      "endDate": "Junio-2022",
+      "summary": [
+        "● Orientar el espacio académico de ESTRUCTURA DE INFORMACION I",
+        "● Orientar el espacio académico de ARQUITECTURA DE COMPUTADORES"
+      ],
+      "highlights": [
+        "Planificación y desarrollo de contenidos académicos alineados con el pensum institucional",
+        "Diseño y aplicación de estrategias pedagógicas para la enseñanza de estructuras de información y arquitectura de computadores",
+        "Evaluación del desempeño académico mediante proyectos prácticos, talleres y exámenes",
+        "Acompañamiento y asesoría a estudiantes en el desarrollo del pensamiento lógico y computacional",
+        "Fomento de buenas prácticas de programación y comprensión de la arquitectura de hardware",
+        "Uso de herramientas tecnológicas y recursos digitales para fortalecer el proceso de enseñanza-aprendizaje"
+      ]
+    },
+        {
+      "name": "ITFIP",
+      "position": "Soporte Tecnico",
+      "url": "https://company.com",
+      "startDate": "Agosto-2014",
+      "endDate": "Junio-2022",
+      "summary": [
+        "● CONTRATACIÓN DE UNA PERSONA QUE SE ENCARGUE DEL SOSTENIMIENTO DE LA PÁGINA WEB DEL ITFIP Y QUE APOYE A LAS ACTIVIDADES QUE SE DESARROLLAN EN EL CENTRO DE CÓMPUTO, EN MANTENIMIENTO PREVENTIVO Y CORRECTIVO DE LOS EQUIPOS",
+        "● PRESTACIÓN DE SERVICIOS TÉCNICOS DE APOYO A LA GESTIÓN EN EL MANTENIMIENTO PREVENTIVO Y CORRECTIVO DE LOS EQUIPOS Y DE DEMÁS ACTIVIDADES QUE SE DESARROLLAN EN EL CENTRO DE CÓMPUTO DE LA INSTITUCIÓN"
+      ],
+      "highlights": [
+        "Administración y sostenimiento de la página web institucional del ITFIP",
+        "Soporte técnico a usuarios en el Centro de Cómputo (hardware y software)",
+        "Ejecución de mantenimiento preventivo y correctivo de equipos de cómputo",
+        "Diagnóstico y solución de fallas técnicas en estaciones de trabajo y periféricos",
+        "Apoyo a la gestión tecnológica de la institución en actividades académicas y administrativas",
+        "Instalación, configuración y actualización de sistemas operativos y aplicaciones",
+        "Garantía de disponibilidad y correcto funcionamiento de la infraestructura tecnológica"
+      ]
     }
   ],
   "volunteer": [
